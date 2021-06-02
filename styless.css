@@ -1,0 +1,502 @@
+
+/*Homepage design starts here*/
+.body1{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background-image: url("a.jpg");
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	background-position:center center;
+	background-repeat: no-repeat;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color:#7575a3;
+	min-height: 9vh; 
+	background: transparent;
+}
+.title{
+	text-transform: uppercase;
+	color:darkorchid;
+	letter-spacing:3px;
+	font-size: 20px;
+	padding: 10px;
+}
+.nav-bar{
+	width:50%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-bar li{
+	display: inline-block;
+	list-style: none;
+}
+.nav-bar a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color:blue;
+	text-transform: uppercase;
+	padding: 7px;
+	margin-left: 5px;
+
+}
+
+.nav-bar li:hover{
+	background-color: yellow;
+}
+.welcome-text{
+	width:600px;
+	height: 200px;
+	margin: 6% 28%;
+	text-align: center;
+}
+.welcome-text h1{
+ font-size: 60px;
+ position: relative;
+ font-family:sans-serif;
+ font-weight: 700px;
+}
+
+.text1{
+    color: #ff3333;
+}
+
+.text2{
+	color: #808080;
+}
+
+p{
+	font-size: 20px;
+	color: #FAD0C9FF;
+}
+.link a{
+	width: 300px;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 20px;
+	border:2px solid darkturquoise;
+	color: #fff;
+	cursor: pointer;
+	/*position: relative;*/
+	padding: 17px 0;
+	margin: 17px 5px;
+	text-decoration: none;
+}
+.link a:hover{
+	color: #fff;
+	background:#666699;
+}
+
+
+/*Portfolio starts here*/
+
+.body2{
+	background-image: url(7.jpg);
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 350px 350px 350px;
+	grid-auto-rows: 200px 200px 200px;
+	grid-gap: 20px;
+	padding: 70px;
+}
+.grid div{
+	text-align: center;
+	padding: 70px 0px;
+}
+.a{
+	background: #7575a3;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.a:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.b{
+	background: #99e6ff;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.b:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.c{
+	background: #ccccb3;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.c:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.0);
+}
+.d{
+	background: #a3c2c2;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.d:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.0);
+}
+.e{
+	background: #d98c8c;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.e:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.0);
+}
+
+.f{
+	background: #dd99ff;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	box-shadow:-20px 20px 7px rgb(0, 0, 0,0.3);
+	transition: 1s;
+}
+.f:hover{
+	background: white;
+	cursor: pointer;
+	transform: scale(1.0);
+}
+/*Portfolio ends here*/
+
+  
+ /*CV page starts here*/
+
+ body.body4{
+ 	background-color:#6DD5FA;
+ 	box-sizing: border-box;
+ }
+ 
+.container{
+	display: flex;
+	text-align: center;
+	flex-flow: row wrap;
+	padding: 12px;
+	margin: 12px;
+	border-radius: 10px;
+	font-family: cursive;
+}
+.head{
+	background: #614385;
+	height: 170px;
+	margin-bottom: 20px;
+	padding: 0 90px;
+	transition: 1.3s;
+}
+.head:hover{
+	background-color:#185a9d;
+	transform: scaleX(1.0);
+
+}
+.edu{
+	background: #dd2476;
+	height: 200px;
+	padding:0 40px;
+	margin: 0 20px;
+	margin-bottom: 20px;
+	transform-style: 1.3s;
+}
+.edu:hover{
+	background-color:#b06ab3;
+	transform: scaleY(1.0);
+}
+
+.exp{
+	background: #19547b;
+	height: 200px;
+	padding: 0 5px;
+	margin-bottom: 20px;
+	transition: 1.3s;
+}
+.exp:hover{
+	background-color:#1d2671;
+}
+.skills{
+	background: #243b55;
+	height: 200px;
+	padding: 0 64px;
+	margin: 0 20px;
+	transition: 1.3s;
+	margin-bottom: 20px;
+}
+.skills:hover{
+	background-color:#61045f;
+	transform: scaleZ(1.0);
+}
+.hobby{
+	background:#434343;
+	height: 200px;
+	padding: 0 200px;
+	margin: 0 16px;
+}
+.hobby:hover{
+	background-color:#537895;
+}
+
+/*CV ends here*/
+
+
+/*Contact  page starts here*/
+
+.body3{
+	margin: 0px;
+	padding:0px;
+	background-image: url(v.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+
+}
+.contact{
+	margin-top:40px;
+	color:black;
+}
+
+.contact h2{
+	padding: 40px;
+	font-size: 20px;
+	line-height: 18px;
+	transition: 0.8 ease;
+}
+form{
+	margin-top: 108px;
+}
+.contact-form{
+	width: 680px;
+	border:none;
+	margin-bottom: 23px;
+	background: transparent;
+	border-bottom: 1px solid #334d4d;
+	font-size: 20px;
+	outline: none;
+	color: #fff;
+    transition: 1s;
+}
+input{
+	height: 22px;
+}
+form .submit{
+	background:#663d00;
+	color: #fff;
+	height: 46px;
+	font-size: 22px;
+	margin-top: 22px;
+	font-weight: bold;
+}
+form .submit:hover{
+	background-color: #66b3ff;
+	cursor: pointer;
+}
+ /*Contact page ends here*/
+
+
+ /*Site-report starts here*/
+
+.body5{
+   background-image: url(10.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0px;
+   padding: 0px;
+}
+.site-intro{
+	padding: 0px 10px;
+}
+.site-intro h1{
+	font-size: 30px;
+	font-family: sans-serif;
+	color:mediumpurple;
+}
+.site-intro h2{
+	font-size: 30px;
+	font-family: sans-serif;
+	color:mediumpurple;
+}
+.site-intro h3{
+	font-size:30px;
+	font-family: sans-serif;
+	color: mediumpurple;
+}
+
+.site-intro p{
+	font-size: 20px;
+	color:rgb(12, 5, 12);
+	font-family: cursive;
+}
+.reference{
+	padding: 0px 10px;
+}
+.reference h1{
+	font-size: 30px;
+	font-family: sans-serif;
+	color: mediumpurple;
+}
+
+.reference p{
+	font-size: 20px;
+	color:rgb(12, 5, 12);
+	font-family: cursive;
+}
+.reference h2{
+	font-family: sans-serif;
+	color: mediumpurple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1045px){
+	.welcome-text{
+		width: 340px;
+	}
+	.container{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.nav-bar{
+		position: relative;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		width: 46%;
+		right: 0px;
+		top: 2vh;
+		height: 20vh;
+		color: #fff;
+	}   
+	.welcome-text{
+		width: 260px;
+		height: 160px;
+		font-size: 45px;
+		bottom: 300px;
+	}
+	.text1{
+		font-size: 50px;
+	}
+	.text2{
+		font-size: 50px;
+	}
+	.welcome-text p{
+		font-size: 25px;
+		width: 140%;
+	}
+	.contact h2{
+		font-size: 15px;
+		width:120%;
+	}
+	.head{
+		width: 510px;
+		font-size: 15;
+
+	}
+	.edu{
+		/*flex: 3;
+		width: 700px;
+		font-size: 15px;*/
+	}
+	.head p{
+      font-size: 15px;
+      width: 600px;
+
+	}
+	.edu p{
+		font-size: 15px;
+		width: 600px;
+	}
+	.exp p{
+		font-size: 15px;
+		width: 600px;
+	}
+	.skills p{
+		font-size: 15px;
+		width: 500px;
+		margin-bottom: 20px;
+	}
+	.hobby{
+		font-size: 15px;
+		width: 600px;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 500px){
+	.welcome-text{
+		width: 200px;
+		height: 100px;
+		top: 60px;
+}
+    .welcome-text p{
+    	font-size: 15px;
+    	width: 120%;
+    	color: purple;
+}
+    .text1{
+	   font-size: 45px;
+	   margin: -20px;
+}
+    .text2{
+	  font-size: 45px;
+}
+
+    }
+    .contact h2{
+    	width: 100%;
+    	color: orangered;
+    }
+    .head p{
+    	width: 400px;
+    }
+    .edu{
+    	width: 450px;
+    }
+    .exp p{
+    	width: 500px;
+    }
+    .skills p{
+    	width: 400px;
+    }
+    .hobby{
+    	width: 200px;
+    }
+}
+
+
+
+
