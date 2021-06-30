@@ -1,5 +1,4 @@
-
-/*Homepage design starts here*/
+/*Homepage starts here*/
 .body1{
 	margin: 0px;
 	padding: 0px;
@@ -8,15 +7,16 @@
 	background-image: url("a.jpg");
 	height: 100vh;
 	background-size: cover;
-	position: relative;
-	background-position:center center;
-	background-repeat: no-repeat;
+	/*position: relative;*/
+	background-position:center;
+	/*background-repeat: no-repeat;*/
 }
 
 nav{
 	display: flex;
+	width: 100%;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	background-color:#7575a3;
 	min-height: 9vh; 
 	background: transparent;
@@ -33,7 +33,34 @@ nav{
 	display: flex;
 	justify-content: space-around;
 }
-
+#hamburger{
+	display: none;
+}
+.hamburger1{
+	padding: 12px;
+	display: flex;
+	justify-content: flex-end;
+}
+.hamburger1 label{
+	cursor: pointer;
+	background-color: white;
+	width: 50px;
+	height: 37px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+.hamburger1 label span{
+	width: 50%;
+	height: 2px;
+	background-color: dimgray;
+	margin: 3px 0px;
+}
+.hamburger1{
+	display: none;
+}
 .nav-bar li{
 	display: inline-block;
 	list-style: none;
@@ -62,7 +89,7 @@ nav{
  font-size: 60px;
  position: relative;
  font-family:sans-serif;
- font-weight: 700px;
+ font-weight: bold;
 }
 
 .text1{
@@ -72,23 +99,45 @@ nav{
 .text2{
 	color: #808080;
 }
-
 p{
 	font-size: 20px;
 	color: #FAD0C9FF;
+	position: relative;
 }
+.welcome-text p::before,
+p::after {
+	content: "";
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+.welcome-text p::before{
+	background: gray;
+	animation: text 3s ease-in-out forwards;
+}
+
+@keyframes text{
+	to{
+		left: 100%;
+	}
+}
+
+
 .link a{
 	width: 300px;
 	font-weight: bold;
 	font-size: 17px;
 	text-align: center;
 	border-radius: 20px;
-	border:2px solid darkturquoise;
+	border:1px solid darkturquoise;
 	color: #fff;
 	cursor: pointer;
-	/*position: relative;*/
-	padding: 17px 0;
-	margin: 17px 5px;
+	position: relative;
+	padding: 15px 15px;
+	margin: 17px 10px;
 	text-decoration: none;
 }
 .link a:hover{
@@ -101,6 +150,8 @@ p{
 
 .body2{
 	background-image: url(ww.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .grid{
@@ -142,7 +193,7 @@ p{
 .c:hover{
 	background: white;
 	cursor: pointer;
-	transform: scale(1.0);
+	transform: scale(1.1);
 }
 .d{
 	background: #a3c2c2;
@@ -152,7 +203,7 @@ p{
 .d:hover{
 	background: white;
 	cursor: pointer;
-	transform: scale(1.0);
+	transform: scale(1.1);
 }
 .e{
 	background: #d98c8c;
@@ -162,7 +213,7 @@ p{
 .e:hover{
 	background: white;
 	cursor: pointer;
-	transform: scale(1.0);
+	transform: scale(1.1);
 }
 
 .f{
@@ -177,7 +228,7 @@ p{
 .f:hover{
 	background: white;
 	cursor: pointer;
-	transform: scale(1.0);
+	transform: scale(1.1);
 }
 /*Portfolio ends here*/
 
@@ -216,7 +267,7 @@ p{
 	padding:0 40px;
 	margin: 0 20px;
 	margin-bottom: 20px;
-	transform-style: 1.3s;
+	transition: 1.3s;
 }
 .edu:hover{
 	background-color:#b06ab3;
@@ -266,7 +317,7 @@ p{
 	background-image: url(ii.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 	font-family: sans-serif;
 	text-align: center;
 
@@ -280,7 +331,8 @@ p{
 	padding: 40px;
 	font-size: 20px;
 	line-height: 18px;
-	transition: 0.8 ease;
+	transition: ease;
+	transition-duration: 0.8s;
 }
 form{
 	margin-top: 108px;
@@ -390,19 +442,35 @@ form .submit:hover{
 	color: mediumpurple;
 	font-size: 23px;
 }
-
-.images{
+section{
+	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 9px;
 }
-
-.items{
-	width: 30%;
-	height: 200px;
+.gallery{
+	width: 31%;
+	text-align: center;
 }
-
-
+.gallery img{
+	width: 100%;
+	height: 250px;
+}
+.gallery h5{
+	font-size: 20px;
+}
+.gallery h6{
+	font-size: 18px;
+}
+.gallery p{
+	font-size: 20px;
+}
 
 @media screen and (max-width: 1045px){
+	.nav-bar{
+		width: 55%;
+	}
 	.welcome-text{
 		width: 340px;
 	}
@@ -412,19 +480,31 @@ form .submit:hover{
 }
 
 @media screen and (max-width: 768px){
+
+         /*Homepage responsive code starts here*/
+
 	.nav-bar{
 		position: relative;
 		align-items: center;
-		display: flex;
 		flex-direction: column;
-		width: 46%;
+		width: 26%;
 		right: 0px;
 		top: 2vh;
 		height: 20vh;
 		color: #fff;
-	}   
+		display: none;
+	}  
+   
+   /*Hamburger code - plus(+) add both checked and navbar in one code*/
+
+	#hamburger:checked + .nav-bar{
+		display: flex;
+	}
+	.hamburger1{
+		display: flex;
+}
 	.welcome-text{
-		width: 260px;
+		width: 300px;
 		height: 160px;
 		font-size: 45px;
 		bottom: 300px;
@@ -439,19 +519,60 @@ form .submit:hover{
 		font-size: 25px;
 		width: 140%;
 	}
-	.contact h2{
-		font-size: 15px;
-		width:120%;
+	.link a{
+		color: black;
+		background-color: purple;
 	}
+
+	   /*Homepage responsive code ends here*/
+ 
+       /*Portfolio responsive code starts here*/
+
+   .grid{
+		display:block;
+	}
+    .grid .a{
+    	width: 600px;
+    	height: 100px;
+    	margin-bottom: 15px;
+    }
+     .grid .b{
+    	width: 600px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+     .grid .c{
+    	width: 600px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+     .grid .d{
+    	width: 600px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+    .grid .e{
+    	width: 600px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+    .grid .f{
+    	width: 650px;
+    	height: 200px;
+    	margin-bottom: 20px;
+    }
+    /*Portfolio reponsive code ends here*/
+
+	
+	/*CV page responsive code starts here*/
 	.head{
 		width: 510px;
-		font-size: 15;
+		font-size: 15px;
 
 	}
 	.edu{
-		/*flex: 3;
 		width: 700px;
-		font-size: 15px;*/
+		font-size: 15px;
 	}
 	.head p{
       font-size: 15px;
@@ -476,17 +597,37 @@ form .submit:hover{
 		width: 600px;
 		margin-bottom: 20px;
 	}
+	
+	   /*Contact Page responsive starts here*/
+	.contact h2{
+		font-size: 25px;
+		width:100%;
+	}
+		/*Contact page responsive code ends here*/
+
+        /*Site-report responsive code starts here*/
+	.site-intro{
+		font-size: 12px;
+	}
+    .reference{
+    	font-size: 12px;
+    }
 }
-@media screen and (max-width: 500px){
+
+      /*Site-report responsive code ends here*/
+
+      @media screen and (max-width: 500px){
+
+	  /*Homepage responsive code starts here*/
 	.welcome-text{
 		width: 200px;
 		height: 100px;
 		top: 60px;
 }
     .welcome-text p{
-    	font-size: 15px;
-    	width: 120%;
-    	color: purple;
+    	font-size: 20px;
+    	width: 150%;
+    	color: dimgray;
 }
     .text1{
 	   font-size: 45px;
@@ -495,12 +636,56 @@ form .submit:hover{
     .text2{
 	  font-size: 45px;
 }
+     /*Homepage responsive code ends here*/
 
+     /*Portfolio reponsive code starts here*/
+
+      .grid .a{
+    	width: 400px;
+    	height: 100px;
+    	margin-bottom: 20px;
     }
+     .grid .b{
+    	width: 400px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+     .grid .c{
+    	width: 400px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+     .grid .d{
+    	width: 400px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+    .grid .e{
+    	width: 400px;
+    	height: 100px;
+    	margin-bottom: 20px;
+    }
+    .grid .f{
+    	width: 400px;
+    	height: 200px;
+    	margin-bottom: 20px;
+    }
+
+     /*Portfolio responsive code ends here*/
+
+
+       /*Contact page responsive code starts here*/
+
     .contact h2{
     	width: 100%;
-    	color: orangered;
+    	color:#F2AA4CFF ;
+    	font-size: 15px;
     }
+
+      /*Contact page responsive code ends here*/
+   
+     /*CV page responsive code ends here*/
+
     .head p{
     	width: 400px;
     }
@@ -516,7 +701,15 @@ form .submit:hover{
     .hobby{
     	width: 200px;
     }
-}
+
+     /*CV page responsive code ends here*/     
+    
+
+    /*Site-report responsive code starts here*/
+
+    .site-intro{
+    	font-size: 14px;
+    }
 
 
 
